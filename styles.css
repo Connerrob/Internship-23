@@ -348,6 +348,7 @@ footer {
   background: none;
   font-weight: 600;
   font-family: 'Lato', sans-serif;
+  cursor: pointer;
  }
  .project-button a {
   text-decoration: none;
@@ -395,6 +396,7 @@ footer {
   color: #040404;
   box-shadow: 0 0 45px #fff;
   border: 2px solid #040404;
+  cursor: pointer;
 }
 
 /* back to top button */
@@ -432,4 +434,5 @@ footer {
   color: #FFF;
   box-shadow: 2px 2px 20px #040404;
   transform: translateY(-2px);
+  cursor: pointer;
 }
