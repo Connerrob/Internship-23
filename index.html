@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Internship | Summer 2023</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript" src="dropdown.js"></script>
+    <script type="text/javascript" src="theme.js"></script>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Roboto:wght@700&family=Space+Mono&display=swap');
+    </style>
+  </head>
+  <body>
+    <header id="header">
+        <div class="title">
+          <nav>
+            <a href="#learned"><button type="button" class="skip-link" href="#learned">What I learned</button></a>
+            <a href="#contact-me"><button type="button" class="skip-link">Contact Me</button></a>
+          </nav>
+      <p class="intern-summer">Internship | Summer 2023</p>
+      <h1 class="Connerrob">
+        Conner</br> Robeson
+      </h1>
+    </div>
+    <div class="toggle-switch">
+      <label class="switch-label">
+        <input type="checkbox" onclick="toggleTheme()" id="theme-toggle" class="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+    </header>
+    <main>
+      <aside>
+        <div class="vert">
+        <h3>Links I have Found useful</h3>
+        <button onclick="toggleDropdown('a11y')" class="dropdown-button">Accessibility</button>
+        <div id="a11y" class="dropdown">
+          <a class="a11y-links" href="https://www.w3.org/TR/WCAG20/#guidelines" target="_blank">W3C - Guidelines</a>
+          <a class="a11y-links" href="https://wcag.com/blog/digital-accessibility-and-neurodiversity/" target="_blank">WCAG - Accessibility and Neurodiversity</a>
+          <a class="a11y-links" href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML" target="_blank">Mozilla - Accessible HTML</a>
+          <a class="a11y-links" href="https://beaccessible.com/post/html-css-accessibility/" target="_blank">Be Accessible - HTML and CSS accessibility</a>
+          <a class="a11y-links" href="https://webaim.org/resources/contrastchecker/" target="_blank">Web Aim - Contrast Checker</a>
+        </div>
+
+        <button onclick="toggleDropdown('mediaQuery')" class="dropdown-button">MediaQuery</button>
+        <div id="mediaQuery" class="dropdown">
+          <a class="media-links" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries" target="_blank">Mozilla - Media Query Beginner Guide</a>
+          <a class="media-links" href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">W3C - Responsive Web Design - Media Query</a>
+          <a class="media-links" href="https://css-tricks.com/a-complete-guide-to-css-media-queries/" target="_blank">CSS Tricks - Complete Guide to Media Query</a>
+          <a class="media-links" href="https://web.dev/learn/design/media-queries/" target="_blank">Web Dev - Media Query</a>
+        </div>
+
+        <button onclick="toggleDropdown('css-layout')" class="dropdown-button">CSS</button>
+        <div id="css-layout" class="dropdown">
+          <a class="css-link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks - Flexbox Layout Guide</a>
+          <a class="css-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox" target="_blank">Mozilla - Basic Concepts of Flexbox</a>
+          <a class="css-link" href="https://web.dev/learn/css/flexbox/" target="_blank">Web Dev - Media Query</a>
+        </div>
+
+        <button onclick="toggleDropdown('file-valid')" class="dropdown-button">File Validators</button>
+        <div id="file-valid" class="dropdown">
+          <a class="validator" href="https://validator.w3.org/" target="_blank">HTML Validator</a>
+          <a class="validator" href="https://validator.w3.org/" target="_blank">CSS Validator</a>
+        </div>
+
+        <button onclick="toggleDropdown('testing-tools')" class="dropdown-button">Testing Tools</button>
+        <div id="testing-tools" class="dropdown">
+          <a class="testing-tools" href="https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn?hl=en-US" target="_blank">Siteimprove Accessibility Checker  - Chrome Extension</a>
+          <a class="testing-tools" href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US" target="_blank">WAVE Evaluation Tool - Chrome Extension</a>
+          <a class="testing-tools" href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US" target="_blank">Axe DevTools Web Accessibility Testing - Chrome Extension</a>
+          <a class="testing-tools" href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en-US" target="_blank">Lighthouse Website Checker - Chrome Extension</a>
+          <a class="testing-tools" href="https://www.w3.org/2002/01/spellchecker">W3C - Spell Checker</a>
+        </div>
+      </div>
+      </aside>
+      <div class="time-here">
+      <h2 class="learned" id="learned">What I have Learned</h2>
+      <p>Throughout my short time here, I have learned some valuable lessons on accessibility. 
+        So, I will share what I have learned here. </p><br>
+       <div class="learned-items">
+        <h3 class="title-learned">POUR Principles</h3>
+        <p>I have already written something for this so I will just leave a link for that: <a class ="POUR" href="https://connerrob.github.io/POUR/" target="_blank">POUR Principles</a> </p>
+       </div>
+       <div class="learned-items">
+        <h3 class="title-learned">PowerPoints</h3>
+        <p>When creating a PowerPoint use a consistent and organized layout for each slide. Avoid cluttered designs and ensure sufficient spacing.
+Also, use a bigger font size to ensure readability, especially when presenting in-person or on larger screens. The larger font accommodates various viewing distances and helps individuals with visual impairments.
+</p>
+       </div>
+       <div class="learned-items">
+        <h3 class="title-learned">Word Documents</h3>
+        <p>For Word documents using headers helps individuals using screen readers to navigate through the document easily. You can use the built-in heading styles in Word, such as, Heading 1, Heading 2, etc., to structure your document.
+           To apply a heading style, select the text and choose the appropriate heading style from the “Styles” dropdown menu in the “Home” tab at the top of the screen. </p>
+       </div>
+       <div class="learned-items">
+        <h3 class="title-learned">PDFs</h3>
+        <p>Tagging the PDF enhances its accessibility. Tags provide a structured representation of the content, allowing assistive technology to interpret and navigate the document more effectively. Tags establish the reading order of the document. The reading order should match the visual order to ensure content is presented correctly. So, it is important to have the document tagged correctly.
+          Using Adobe Acrobat Pro, you can use their built-in accessibility checker to help check your documents. These checks are designed to identify potential issues and provide suggestions for improving accessibility.
+           </p>
+       </div>
+       <div class="learned-items">
+        <h3 class="title-learned">Videos</h3>
+        <p>If your material contains multimedia elements like videos or audio files, provide captions or transcripts. This makes the content accessible to people with hearing impairments or those who cannot access the media. You can provide a separate transcript in the document. </p>
+       </div>
+       <div class="learned-items">
+        <h3 class="title-learned">Websites</h3>
+        <h4 class="header4">Headings</h4>
+        <p>Using the correct heading tags(h1 the biggest to h6 being the smallest) is important because if not correctly used a screen reader might assume there is content missing.
+           It is best to use h1 for the main title, h2 for heading that come after the title, h3 for subheadings, and so on. </p>
+           <h4 class="header4">Aria-Labels</h4>
+           <p>Aria- labels are used to provide a text alternative when the visible label or text associated with an element is insufficient or unavailable. They help screen readers and other assistive technologies convey the intended meaning of an element to users who may not be able to see it. When labeling elements, it’s generally recommended to use visible text labels whenever possible. Aria-labels should be used as a fallback option or when the visible label is not available. This ensures that users who can see the content can benefit from the visual cues.
+            <br></br>Syntax:
+            Aria-labels can be applied using the “aria-label” attribute, which is added to the HTML element you want to label. The value of the attribute should be concise and descriptive text that describes the purpose or function of the element. 
+            </p>
+            <h4 class="header4">Keyboard Functionality</h4>
+            <p>Keyboard functionality is an essential part of website accessibility, as it allows individuals who cannot use a mouse or other pointing device to navigate and interact with web content using only the keyboard.
+              <br></br>Ensure that interactive elements, such as links, buttons, and form inputs, can receive focus using the “Tab” key. Each focusable element should have a clear and visible focus indicator, such as a highlight or outline, to indicate the currently focused element. Make sure that the keyboard navigation order follows a logical and meaningful sequence. 
+              Users should be able to navigate through interactive elements and content in a way that makes sense and follows the visual layout of the page</p>
+       </div>
+
+    </div>
+
+    </main>
+    <footer>
+        <div class="projects-container" id="contact-me">
+          <div class="project">
+        <h3>My projects</h3>
+        <a href="https://connerrob.github.io/Weather/" target="_blank"></a><button type="button" class="project-button">Weather</button></a>
+        <a href="https://connerrob.github.io/TicTacToe/" target="_blank"></a><button type="button" class="project-button">Tic-Tac-Toe</button></a>
+        <a><button type="button" class="project-button">Movies</button></a>
+        </div>
+        <div class="Contact-container">
+        <h3>Contact me</h3>
+        <div class="contacts">
+          <p>Phone: 352-213-7078</p>
+          <p class="border-bottom">Email: conner.robeson@ufl.edu</p>
+          
+          <h3>Check out my Github</h3>
+          <a href="https://github.com/Connerrob?tab=repositories" target="_blank"><button type="button" class="git-button">Github</button></a>
+        </div>
+      </div>
+      </div>
+      <a href="#header"><button class="up-button">
+        <svg class="upArrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 
+          160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0
+           17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+           Back to Top
+    </button></a>
+    </footer>
+  </body>
+</html>
