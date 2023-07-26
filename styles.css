@@ -264,6 +264,9 @@ main {
   font-weight: 900;
   line-height: 46px;
 }
+p {
+  line-height: 1.5;
+}
 
 /* start of card for learned items */
 .time-here {
