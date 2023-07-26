@@ -2,7 +2,7 @@
 function toggleTheme() {
     const header = document.querySelector('header');
     const aside = document.querySelector('aside');
-    const button = document.querySelector('.dropdown-button');
+    const buttons = document.querySelectorAll('.dropdown-button');
     const main = document.querySelector('main');
     const learned = document.querySelector('.learned');
     const footer = document.querySelector('footer');
@@ -13,8 +13,10 @@ function toggleTheme() {
       header.classList.add('dark-mode');
       aside.classList.remove('light-mode');
       aside.classList.add('dark-mode');
-      button.classList.remove('light-mode');
-      button.classList.add('dark-mode');
+      buttons.forEach(button => {
+        button.classList.remove('light-mode');
+        button.classList.add('dark-mode');
+      });
       main.classList.remove('light-mode');
       main.classList.add('dark-mode');
       learned.classList.remove('light-mode');
@@ -26,8 +28,10 @@ function toggleTheme() {
       header.classList.add('light-mode');
       aside.classList.remove('dark-mode');
       aside.classList.add('light-mode');
-      button.classList.remove('dark-mode');
-      button.classList.add('light-mode');
+      buttons.forEach(button => {
+        button.classList.remove('dark-mode');
+        button.classList.add('light-mode');
+      });
       main.classList.remove('dark-mode');
       main.classList.add('light-mode');
       learned.classList.remove('dark-mode');
@@ -36,4 +40,5 @@ function toggleTheme() {
       footer.classList.add('light-mode');
     }
    }
+   
    
