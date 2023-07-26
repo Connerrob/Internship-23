@@ -3,6 +3,7 @@ html {
   height: 3023px;
   background-color: black;
 }
+/* start of Nav styles */
 nav {
   display: flex;
   gap: 25px;
@@ -22,6 +23,8 @@ nav a {
   transform: translateY(-2px);
   cursor: pointer;
 }
+/* end of Nav styles */
+
 /* start of header styles */
 header {
   width: 1870px;
@@ -54,7 +57,9 @@ header {
   font-weight: 900;
   word-wrap: break-word;
 }
-/* Darkmode/lightmode styles */
+/* End of header styles*/
+
+/* start of Darkmode/lightmode toggle button styles */
 .toggle-switch {
   position: relative;
   width: 100px;
@@ -116,7 +121,9 @@ header {
   -webkit-box-shadow: none;
   box-shadow: none;
  }
- 
+ /* end of darkmode/lightmode toggle button styles */
+
+ /* start of darkmode/lightmode styles for the button */
  header.light-mode {
   background-color: #040404;
   color: #fff;
@@ -135,9 +142,17 @@ header {
  aside.dark-mode {
   color: #fff;
  }
+ button.light-mode {
+  background-color: #040404;
+  color: #FFF;
+ }
  .dropdown-button.light-mode {
   background-color: #040404;
   color: #FFF;
+ }
+ .dropdown-button.dark-mode {
+  background-color: #FFF;
+  color: #040404;
  }
  .dropdown-button.dark-mode {
   background-color: #FFF;
@@ -165,6 +180,8 @@ footer.dark-mode {
   background-color: #444544;
   color: #FFF;
 }
+/* End of darkmode/lightmode styles for the button */
+
 /*Start of aside section*/
 button {
   border-radius: 20px;
@@ -197,6 +214,7 @@ aside {
   padding: 16px;
   font-size: 16px;
   margin-bottom: 10px;
+  background-color: #FFF;
   border: none;
   cursor: pointer;
 }
@@ -228,6 +246,7 @@ aside {
 .dropdown a:hover {
   background-color: #ddd;
 }
+/* end of aside styles */
 
 /* start of Main styles*/
 main {
@@ -246,6 +265,8 @@ main {
   font-weight: 900;
   line-height: 46px;
 }
+
+/* start of card for learned items */
 .time-here {
   display: flex;
   flex-direction: column;
@@ -280,6 +301,8 @@ main {
   color: #fff;
   text-decoration: underline;
 }
+/* end of learned items/main styles */
+
 /* Start of footer styles */
 footer {
   width: 1703px;
