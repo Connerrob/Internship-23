@@ -34,7 +34,7 @@ header {
   padding: 96px 10px;
   color: black;
   flex-shrink: 0;
-  background-color: #444544;
+  background-color: #00529b;
 }
 .intern-summer {
   width: 635px;
@@ -63,8 +63,8 @@ header {
   position: relative;
   width: 100px;
   height: 50px;
-  --light: #d8dbe0;
-  --dark: #28292c;
+  --light: #00529b;
+  --dark: #bc581a;
   --link: rgb(27, 129, 112);
   --link-hover: rgb(24, 94, 82);
  }
@@ -124,60 +124,83 @@ header {
 
  /* start of darkmode/lightmode styles for the button */
  header.light-mode {
-  background-color: #040404;
+  background-color: #bc581a;
   color: #fff;
  }
  
  header.dark-mode {
-  background-color: #444544;
+  background-color: #00529b;
   color: #fff;
  }
  aside.light-mode {
-  background-color: white;
-  color: #040404;
-  border-right: 3px solid black;
+  color: #333132;
+  border-right: 3px solid #bc581a;
  }
  
  aside.dark-mode {
-  color: #fff;
+  color: #333132;
+  border-right: 3px solid #00529b;
  }
  button.light-mode {
   background-color: #040404;
   color: #FFF;
  }
  .dropdown-button.light-mode {
-  background-color: #040404;
+  background-color: #bc581a;
   color: #FFF;
  }
  .dropdown-button.dark-mode {
-  background-color: #FFF;
-  color: #040404;
+  background-color: #00529b;
+  color: #FFF;
  }
- .dropdown-button.dark-mode {
-  background-color: #FFF;
-  color: #040404;
- }
+
 main.light-mode {
-  background-color: #FFF;
-  color: #040404;
+  background-color: #faf8f1;
+  color: #333132;
 }
 main.dark-mode {
-  background-color: #040404;
-  color: #FFF;
+  background-color: #faf8f1;
+  color: #333132;
 }
 .learned.light-mode {
-  color:#040404;
+  color:#333132;
 }
 .learned.dark-mode {
+  color: #333132;
+}
+.learned-items.light-mode {
   color: #FFF;
+  background-color: #00529b;
+}
+.learned-items.dark-mode {
+  background-color: #bc581a;
 }
 footer.light-mode {
-  background-color:#040404;
+  background-color:#bc581a;
   color: #FFF;
 }
 footer.dark-mode {
-  background-color: #444544;
+  background-color: #00529b;
   color: #FFF;
+}
+.projects-container.light-mode {
+  color: #FFF;
+  background-color: #00529b;
+}
+.projects-container.dark-mode {
+  background-color: #bc581a;
+}
+.git-button.light-mode {
+  background-color: #bc581a;
+}
+.git-button.dark-mode {
+  background-color: #00529b;
+}
+.up-button.light-mode {
+  background-color: #00529b;
+}
+.up-button.dark-mode {
+  background-color: #bc581a;
 }
 /* End of darkmode/lightmode styles for the button */
 
@@ -194,10 +217,11 @@ button {
   line-height: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 aside {
   display: flex;
-  color: white;
+  color: #333132;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -205,7 +229,7 @@ aside {
   letter-spacing: 2px;
   text-transform: uppercase;
   width: 15%;
-  border-right: 3px solid #fff;
+  border-right: 3px solid #bc581a;
   margin-right: 100px;
 }
 
@@ -213,7 +237,8 @@ aside {
   padding: 16px;
   font-size: 16px;
   margin-bottom: 10px;
-  background-color: #FFF;
+  background-color: #00529b;
+  color: #FFF;
   border: none;
   cursor: pointer;
 }
@@ -253,11 +278,11 @@ main {
   display: flex;
   flex-direction: row;
   padding: 96px 10px;
-  background-color: #040404;
-  color: #fff;
+  background-color: #faf8f1;
+  color: #333132;
 }
 .learned {
-  color: #fff;
+  color: #333132;
   font-size: 36px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -286,7 +311,7 @@ p {
   flex-direction: column;
   align-items: center;
   color: white;
-  background-color: #444544;
+  background-color: #bc581a;
   box-shadow: 0px 0px 9px 1px rgba(255,255,255,1);
 -webkit-box-shadow: 0px 0px 9px 1px rgba(255,255,255,1);
 -moz-box-shadow: 0px 0px 9px 1px rgba(255,255,255,1);
@@ -315,14 +340,14 @@ footer {
   align-items: center;
   gap: 10px;
   align-self: stretch;
-  background-color: #444544;
+  background-color: #00529b;
   color: #FFF;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
  .projects-container {
-  background-color: #1a1a1a;
+  background-color: #bc581a;
   border-radius: 20px;
   transition: all .2s;
   padding: 0 96px 20px 96px;
@@ -384,7 +409,7 @@ footer {
   transition: 0.5s;
   position: relative;
   font-size: 17px;
-  background: #333;
+  background: #00529b;
   border: none;
   color: #fff;
   border: 2px solid #fff;
@@ -404,7 +429,7 @@ footer {
 
 /* back to top button */
 .up-button {
-  background-color: #040404;
+  background-color: #bc581a;
   color: #fff;
   border: none;
   border-radius: 20px;
