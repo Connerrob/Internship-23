@@ -464,3 +464,52 @@ footer {
   transform: translateY(-2px);
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  html {
+    max-width: 768px;
+  }
+  .skip-link {
+    width: 150px;
+  }
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 768px;
+  }
+  .Connerrob {
+    font-size: 36px;
+  }
+  .intern-summer {
+    font-size: 20px;
+  }
+  main {
+    font-size: 16px;
+    width: 768px;
+  }
+  .learned-items {
+    font-size: 16px;
+    width: 300px;
+  }
+  aside {
+    display: none;
+  }
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 768px;
+  }
+  .projects-container {
+   font-size: 16px;
+   width: 400px;
+  }
+  .up-button {
+    width: 150px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
