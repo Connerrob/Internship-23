@@ -1,4 +1,3 @@
-// Function to toggle the theme
 function toggleTheme() {
     const header = document.querySelector('header');
     const aside = document.querySelector('aside');
@@ -11,11 +10,14 @@ function toggleTheme() {
     const gitbutton = document.querySelector('.git-button');
     const topbutton = document.querySelector('.up-button');
 
+    //basically if header is in light mode it changes to dark mode
+    //so each time you click the toggle button it changes the colors based on the header color.
     if (header.classList.contains('light-mode')) {
       header.classList.remove('light-mode');
       header.classList.add('dark-mode');
       aside.classList.remove('light-mode');
       aside.classList.add('dark-mode');
+      //using foreach because there is multiple times this class is used
       buttons.forEach(button => {
         button.classList.remove('light-mode');
         button.classList.add('dark-mode');
@@ -24,6 +26,7 @@ function toggleTheme() {
       main.classList.add('dark-mode');
       learned.classList.remove('light-mode');
       learned.classList.add('dark-mode');
+      //using foreach because there is multiple times this class is used
       learnedItems.forEach(learnedItem => {
         learnedItem.classList.remove('light-mode');
         learnedItem.classList.add('dark-mode');
@@ -36,7 +39,9 @@ function toggleTheme() {
       gitbutton.classList.add('dark-mode');
       topbutton.classList.remove('light-mode');
       topbutton.classList.add('dark-mode');
-    } else {
+    } 
+    // this is for changing the color back to the orginal if you click the button again
+    else {
       header.classList.remove('dark-mode');
       header.classList.add('light-mode');
       aside.classList.remove('dark-mode');
