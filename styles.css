@@ -10,16 +10,16 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color:#040404;
+  color: #040404;
 }
 .skip-link {
-  background-color: #FFF;
-  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 .skip-link:hover {
   background-color: #040404;
-  color: #FFF;
-  box-shadow: 2px 2px 20px #FFF;
+  color: #fff;
+  box-shadow: 2px 2px 20px #fff;
   transform: translateY(-2px);
   cursor: pointer;
 }
@@ -39,9 +39,9 @@ header {
 .intern-summer {
   width: 635px;
   display: flex;
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-size: 2.1875rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 1.5;
@@ -51,7 +51,7 @@ header {
 .Connerrob {
   color: white;
   font-size: 100px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   word-wrap: break-word;
@@ -65,9 +65,9 @@ header {
   height: 50px;
   --light: #00529b;
   --dark: #bc581a;
- }
- 
- .switch-label {
+}
+
+.switch-label {
   position: absolute;
   width: 100%;
   height: 50px;
@@ -75,27 +75,27 @@ header {
   border-radius: 25px;
   cursor: pointer;
   border: 3px solid var(--dark);
- }
- 
- .checkbox {
+}
+
+.checkbox {
   position: absolute;
   display: none;
- }
- 
- .slider {
+}
+
+.slider {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 25px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
- }
- 
- .checkbox:checked ~ .slider {
+}
+
+.checkbox:checked ~ .slider {
   background-color: var(--light);
- }
- 
- .slider::before {
+}
+
+.slider::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -108,49 +108,49 @@ header {
   background-color: var(--dark);
   -webkit-transition: 0.3s;
   transition: 0.3s;
- }
- 
- .checkbox:checked ~ .slider::before {
+}
+
+.checkbox:checked ~ .slider::before {
   -webkit-transform: translateX(50px);
   -ms-transform: translateX(50px);
   transform: translateX(50px);
   background-color: var(--dark);
   -webkit-box-shadow: none;
   box-shadow: none;
- }
- /* end of darkmode/lightmode toggle button styles */
+}
+/* end of darkmode/lightmode toggle button styles */
 
- /* start of darkmode/lightmode styles for the button */
- header.light-mode {
+/* start of darkmode/lightmode styles for the button */
+header.light-mode {
   background-color: #bc581a;
   color: #fff;
- }
- 
- header.dark-mode {
+}
+
+header.dark-mode {
   background-color: #00529b;
   color: #fff;
- }
- aside.light-mode {
+}
+aside.light-mode {
   color: #333132;
   border-right: 3px solid #bc581a;
- }
- 
- aside.dark-mode {
+}
+
+aside.dark-mode {
   color: #333132;
   border-right: 3px solid #00529b;
- }
- button.light-mode {
+}
+button.light-mode {
   background-color: #040404;
-  color: #FFF;
- }
- .dropdown-button.light-mode {
+  color: #fff;
+}
+.dropdown-button.light-mode {
   background-color: #bc581a;
-  color: #FFF;
- }
- .dropdown-button.dark-mode {
+  color: #fff;
+}
+.dropdown-button.dark-mode {
   background-color: #00529b;
-  color: #FFF;
- }
+  color: #fff;
+}
 
 main.light-mode {
   background-color: #faf8f1;
@@ -161,31 +161,38 @@ main.dark-mode {
   color: #333132;
 }
 .learned.light-mode {
-  color:#333132;
+  color: #333132;
 }
 .learned.dark-mode {
   color: #333132;
 }
 .learned-items.light-mode {
-  color: #FFF;
+  color: #fff;
   background-color: #00529b;
 }
 .learned-items.dark-mode {
   background-color: #bc581a;
 }
 footer.light-mode {
-  background-color:#bc581a;
-  color: #FFF;
+  background-color: #bc581a;
+  color: #fff;
 }
 footer.dark-mode {
   background-color: #00529b;
-  color: #FFF;
+  color: #fff;
 }
 .projects-container.light-mode {
-  color: #FFF;
+  color: #fff;
   background-color: #00529b;
 }
 .projects-container.dark-mode {
+  background-color: #bc581a;
+}
+.Contact-container.light-mode {
+  color: #fff;
+  background-color: #00529b;
+}
+.Contact-container.dark-mode {
   background-color: #bc581a;
 }
 .git-button.light-mode {
@@ -220,7 +227,7 @@ button {
 aside {
   display: flex;
   color: #333132;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 24px;
@@ -236,13 +243,14 @@ aside {
   font-size: 16px;
   margin-bottom: 10px;
   background-color: #00529b;
-  color: #FFF;
+  color: #fff;
   border: none;
   cursor: pointer;
 }
-.dropdown-button:hover, .dropdown-button:focus {
+.dropdown-button:hover,
+.dropdown-button:focus {
   background-color: #444544;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   color: white;
 }
 .vert {
@@ -254,7 +262,7 @@ aside {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 20px;
 }
@@ -282,7 +290,7 @@ main {
 .learned {
   color: #333132;
   font-size: 36px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   line-height: 46px;
@@ -295,12 +303,12 @@ p {
 .time-here {
   display: flex;
   flex-direction: column;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
 }
 .learned-items {
   display: flex;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   width: 1024px;
   border-radius: 30px;
   margin-bottom: 20px;
@@ -310,13 +318,13 @@ p {
   align-items: center;
   color: white;
   background-color: #bc581a;
-  box-shadow: 0px 0px 9px 1px rgba(255,255,255,1);
--webkit-box-shadow: 0px 0px 9px 1px rgba(255,255,255,1);
--moz-box-shadow: 0px 0px 9px 1px rgba(255,255,255,1);
+  box-shadow: 0px 0px 9px 1px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 0px 9px 1px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 9px 1px rgba(255, 255, 255, 1);
 }
 .title-learned {
   font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .header4 {
   align-self: flex-start;
@@ -332,73 +340,124 @@ p {
 footer {
   width: 1703px;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   padding: 34px 96px;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   align-self: stretch;
   background-color: #00529b;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
 }
- .projects-container {
+.projects-container {
   background-color: #bc581a;
   border-radius: 20px;
-  transition: all .2s;
+  transition: all 0.2s;
   padding: 0 96px 20px 96px;
   display: flex;
   flex-direction: row;
   gap: 35px;
-  font-family: 'Roboto', sans-serif;
- }
- .project {
+  font-family: "Roboto", sans-serif;
+}
+.project {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Lato', sans-serif;
- }
- 
- .projects-container:hover {
-  box-shadow: 2px 2px 10px #FFF;
+  font-family: "Lato", sans-serif;
+  margin-left: -40px;
+}
+
+.projects-container:hover {
+  box-shadow: 2px 2px 10px #fff;
   transition: all 0.2s ease-in-out;
- }
- /* Project buttons */
- .project-button {
+}
+/* Project buttons */
+.project-button {
   color: white;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   border: none;
   background: none;
   font-weight: 600;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   cursor: pointer;
- }
- .project-button a {
+  width: 135px;
+}
+.project-button a {
   text-decoration: none;
-  color: #FFF;
-  font-family: 'Lato', sans-serif;
- }
- .project-button::before {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+.project-button::before {
   margin-left: auto;
- }
- .project-button::after, .project-button::before {
-  content: '';
+}
+.project-button::after,
+.project-button::before {
+  content: "";
   width: 0%;
   height: 2px;
   background: #fff;
   display: block;
   transition: 0.5s;
 }
-.project-button:hover::after, .project-button:hover::before {
+.project-button:hover::after,
+.project-button:hover::before {
   width: 100%;
+}
+.weatherIcon {
+  height: 75px;
+  width: 75px;
+  border-radius: 20px;
+  flex-direction: row;
+}
+.weatherProj {
+  display: flex;
+}
+.tictactoeIcon {
+  height: 75px;
+  width: 75px;
+  border-radius: 20px;
+  flex-direction: row;
+}
+.tic-tac-toeProj {
+  display: flex;
+}
+.movieIcon {
+  height: 75px;
+  width: 75px;
+  border-radius: 20px;
+  flex-direction: row;
+  background-color: #f1f1f1;
+}
+.movieProj {
+  display: flex;
 }
 /* border under email */
 .border-bottom {
   padding-bottom: 20px;
-  border-bottom: 3px solid #FFF;
+  border-bottom: 3px solid #fff;
+}
+.Contact-container {
+  background-color: #bc581a;
+  border-radius: 20px;
+  transition: all 0.2s;
+  padding: 0 75px 20px 75px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.contact-me {
+  margin-bottom: -10px;
+}
+.phone {
+  margin-bottom: -10px;
+}
+.Contact-container:hover {
+  box-shadow: 2px 2px 10px #fff;
+  transition: all 0.2s ease-in-out;
 }
 .git-button {
   text-transform: uppercase;
@@ -411,11 +470,11 @@ footer {
   border: none;
   color: #fff;
   border: 2px solid #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .git-button a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 .git-button:hover {
   background: #444544;
@@ -436,15 +495,15 @@ footer {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
-  box-shadow: 2px 2px 10px #FFF;
+  box-shadow: 2px 2px 10px #fff;
   transition: all 0.2s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
- a {
+a {
   text-decoration: none;
   color: #fff;
 }
@@ -457,7 +516,7 @@ footer {
 
 .up-button:hover {
   background-color: #353434;
-  color: #FFF;
+  color: #fff;
   box-shadow: 2px 2px 20px #040404;
   transform: translateY(-2px);
   cursor: pointer;
@@ -489,25 +548,24 @@ footer {
     font-size: 24px;
     width: 400px;
   }
-aside {
-  width: 15%;
-  font-size: 12px;
-  padding-right: 40px;
-}
-.dropdown-button {
-  width: 150px;
-  font-size: 12px;
-  text-transform: none;
-
-}
+  aside {
+    width: 15%;
+    font-size: 12px;
+    padding-right: 40px;
+  }
+  .dropdown-button {
+    width: 150px;
+    font-size: 12px;
+    text-transform: none;
+  }
   footer {
     padding-left: 10px;
     padding-right: 10px;
     width: 768px;
   }
   .projects-container {
-   font-size: 16px;
-   width: 400px;
+    font-size: 16px;
+    width: 400px;
   }
   .up-button {
     width: 150px;
