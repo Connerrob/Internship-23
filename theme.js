@@ -73,5 +73,11 @@ function toggleTheme() {
     topbutton.classList.add("light-mode");
   }
 }
-
+function handleToggle(event) {
+  if (event.key === "Enter" || event.keycode === 13 || event.type === "click") {
+    const checkbox = document.getElementById("theme-toggle");
+    checkbox.checked = !checkbox.checked
+    toggleTheme();
+  }
+}
    
