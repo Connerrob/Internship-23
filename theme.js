@@ -74,7 +74,7 @@ function toggleTheme() {
   }
 }
 function handleToggle(event) {
-  if (event.key === "Enter" || event.keycode === 13 || event.type === "click") {
+  if (event.key === "Enter") {
     const checkbox = document.getElementById("theme-toggle");
     checkbox.checked = !checkbox.checked
     toggleTheme();
