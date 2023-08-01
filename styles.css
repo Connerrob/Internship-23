@@ -76,7 +76,9 @@ header {
   cursor: pointer;
   border: 3px solid var(--dark);
 }
-
+.visually-hidden {
+  display: none;
+}
 .checkbox {
   position: absolute;
   display: none;
