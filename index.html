@@ -29,7 +29,8 @@
     </div>
     <!--Darkmode toggle switch-->
     <div class="toggle-switch">
-      <label class="switch-label">
+      <label class="switch-label" for="theme-toggle" tabindex="0" onkeydown="handleToggle(event)">
+        <span class="visually-hidden">Toggle theme</span>
         <input type="checkbox" onclick="toggleTheme()" id="theme-toggle" class="checkbox">
         <span class="slider"></span>
       </label>
