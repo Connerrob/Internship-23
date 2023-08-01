@@ -37,7 +37,7 @@ function toggleTheme() {
     project.classList.remove("light-mode");
     project.classList.add("dark-mode");
     contact.classList.remove("light-mode");
-    contact.classList.add("light-mode");
+    contact.classList.add("dark-mode");
     gitbutton.classList.remove("light-mode");
     gitbutton.classList.add("dark-mode");
     topbutton.classList.remove("light-mode");
