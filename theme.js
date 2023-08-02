@@ -2,6 +2,7 @@ function toggleTheme() {
   const header = document.querySelector("header");
   const aside = document.querySelector("aside");
   const buttons = document.querySelectorAll(".dropdown-button");
+  const dropdown = document.querySelectorAll(".dropdown");
   const main = document.querySelector("main");
   const learned = document.querySelector(".learned");
   const footer = document.querySelector("footer");
@@ -22,6 +23,10 @@ function toggleTheme() {
     buttons.forEach((button) => {
       button.classList.remove("light-mode");
       button.classList.add("dark-mode");
+    });
+    dropdown.forEach((dropdown) => {
+      dropdown.classList.remove("light-mode");
+      dropdown.classList.add("dark-mode");
     });
     main.classList.remove("light-mode");
     main.classList.add("dark-mode");
@@ -53,6 +58,10 @@ function toggleTheme() {
       button.classList.remove("dark-mode");
       button.classList.add("light-mode");
     });
+    dropdown.forEach((dropdown) => {
+      dropdown.classList.remove("dark-mode");
+      dropdown.classList.add("light-mode");
+    });
     main.classList.remove("dark-mode");
     main.classList.add("light-mode");
     learned.classList.remove("dark-mode");
@@ -80,4 +89,3 @@ function handleToggle(event) {
     toggleTheme();
   }
 }
-   
