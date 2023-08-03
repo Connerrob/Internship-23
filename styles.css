@@ -484,7 +484,7 @@ footer {
 }
 .git-button:hover {
   background: #444544;
-  color: #040404;
+  color: #FFF;
   box-shadow: 0 0 45px #fff;
   border: 2px solid #040404;
   cursor: pointer;
